@@ -1,11 +1,11 @@
 import streamlit as st
 import openai
 
-st.set_page_config(page_title="Where to Travel... What to Do?", page_icon = "✈️")
+st.set_page_config(page_title="Where2Travel", page_icon = "✈️")
 
 openai.api_key = st.secrets["API_KEY"]
 
-st.title("Travel Plans")
+st.title("Where to go")
 
 destination = st.text_input("Destination")
 days = st.number_input("Number of Days", value = 1)
@@ -28,9 +28,11 @@ if st.button("Let's hear it!"):
 
 		            I will be going to {} for {} days.
 
-		            Give me a detailed itinerary with 2 or 3 activites or attractions for each day
+		            Give me a detailed itinerary with 2 or 3 activites or attractions for each day.
+			    
+			    When planning the itinerary, group activities or attractions that are nearby together. 
 
-		            Also, please include food recommendations for breakfast, lunch, dinner and dessert that are nearby.
+		            Also, include food recommendations for breakfast, lunch, dinner and dessert that are nearby.
 		            
 		            """.format(destination, days)},
 		        ]
