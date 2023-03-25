@@ -1,7 +1,7 @@
 import streamlit as st
 import openai
 
-st.set_page_config(page_title="Travel Plans", page_icon = "✈️")
+st.set_page_config(page_title="Where to Travel... What to Do?", page_icon = "✈️")
 
 openai.api_key = st.secrets["API_KEY"]
 
