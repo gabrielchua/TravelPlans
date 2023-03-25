@@ -5,7 +5,7 @@ st.set_page_config(page_title="Where2Travel", page_icon = "✈️")
 
 openai.api_key = st.secrets["API_KEY"]
 
-st.title("Where to go")
+st.title("What2Do")
 
 destination = st.text_input("Destination")
 days = st.number_input("Number of Days", value = 1)
